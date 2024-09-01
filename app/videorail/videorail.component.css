@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --pink:#FF046F;
+    --violet:#C63BFA;
+
+
+}
+*{
+    font-family:'Roboto',sans-serif ;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*::selection{
+    background: #FF046F;
+    overflow-x: hidden;
+}
+
+.heading{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.title{
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    color:#292626;
+}
+
+
+
+header{
+    width: 96%;
+    background: #fff;
+    position: fixed;
+    top: 2rem;left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+.header-active{
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+
+
+}
+ 
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 50px 2rem;
+    color: var(--pink);
+    transition: .2s;
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: #C63BFA;
+}
+
+header .logo{
+    font-size: 60px 2.5rem;
+    color: #C63BFA;
+    text-transform: uppercase;
+}
+
+header .logo i{
+    color: #FF046F;
+    padding: 0 .2rem;
+
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #FF046F;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+.course{
+    min-height: 100vh;
+    background: linear-gradient(rgba(198,59,250,.8),rgba(198, 59, 194, .8)),url(../../assets/school-supplies-3033204_1280.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-info {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.video-info h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+.stats span {
+    margin-right: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.stats button.subscribe-btn {
+    padding: 8px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.comments-section {
+    padding: 20px;
+}
+
+.comments-section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+.comment span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment p {
+    margin: 0;
+    color: #333;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.comment-form button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    
+    
+}
+
+.coursin {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    font-style: italic;
+    
+    
+}
+
+.course img {
+    
+    height: 200px;
+    width:280px;
+}
